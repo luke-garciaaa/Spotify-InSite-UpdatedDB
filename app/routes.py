@@ -38,8 +38,8 @@ def authorize_page():
 
 def create_spotify_oauth():
     return SpotifyOAuth(
-        #client_id = os.environ.get("SPOTIPY_CLIENT_ID"),
-        #client_secret = os.environ.get("SPOTIPY_CLIENT_SECRET"),
+        client_id = os.environ.get("SPOTIPY_CLIENT_ID"),
+        client_secret = os.environ.get("SPOTIPY_CLIENT_SECRET"),
         
         redirect_uri = 'http://localhost:5000/authorize',
         ## URL_FOR SUCKS AND DOESNT WORK
