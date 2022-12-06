@@ -20,8 +20,7 @@ app.config['SECRET_KEY'] = '4de316f46ad6af0ed9a5fa972606f225'
 
 ##DATABASE CONTROLS
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://vhidjhsikutqzu:edfcd9e09167af399572e686d580ba205c03afe6f71ede8a10fd22383cced733@ec2-52-4-104-184.compute-1.amazonaws.com:5432/d7dgd24l3ltb5g'    
-#'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
 bcrypt = Bcrypt(app)
